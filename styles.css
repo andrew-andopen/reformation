@@ -1,0 +1,149 @@
+@import url("https://use.typekit.net/zab7xay.css");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ -webkit-font-smoothing: antialiased;
+color:#ffffff;
+min-height:100vh;
+background: linear-gradient(to bottom, #35695C 60%, #F7F7F7 40%);
+background-repeat:no-repeat;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: courier-prime;
+ font-weight:100;
+}
+
+button {
+ cursor: pointer;
+}
+
+
+h1{
+    font-size: 3.5em;
+ font-weight: 100;
+ line-height: 1.2;
+}
+
+h2{
+    font-size: 1em;
+    margin-top: 1em;
+ font-weight: 100;
+}
+
+textarea{
+    width:100%;
+    min-height:14rem;
+    padding:1em;
+    margin-top:4em;
+    border:none;
+    border-radius:4px;
+    font-size:1em;
+}
+
+textarea:focus{
+    border:1px solid #35695C;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding:3em 4em;
+}
+
+header img{
+    max-width:10em;
+}
+
+.container{
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+    max-width:1440px;
+    padding: 4em 6em;
+}
+
+.content{
+    grid-column: 2/7;
+
+    margin-top:5em;
+}
+
+a.button{
+    background-color: #303133;
+    display:inline-block;
+    margin-top:1.6em;
+    width:12em;
+    height:3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+}
+
+a.button:hover{
+    background-color:#35695C;
+}
+
+.illo{
+    grid-column: 7/12;
+    margin-top:8em;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+.illo img{
+    width:80%;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    body{
+        text-align:center;
+    }
+
+    .container{
+        grid-gap:0;
+        padding:2em 1.2em;
+    }
+
+    .content{
+        grid-column: 1/13;
+
+        margin-top:0;
+    }
+
+    .illo{
+        margin-top:0;
+    }
+
+    textarea{
+        margin-top:2em;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    
+    h2{
+        font-size: 1em;
+    }
+
+}
