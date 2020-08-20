@@ -112,8 +112,26 @@ a.button:hover{
     width:80%;
 }
 
+@media screen and (max-width: 1164px) {
 
-@media screen and (max-width: 550px) {
+    .content{
+        grid-column: 1/9;
+
+        margin-top:0;
+    }
+
+    .illo{
+        grid-column: 9/13;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    header{
+        padding:2em 4em;
+    }
 
     body{
         text-align:center;
@@ -121,7 +139,7 @@ a.button:hover{
 
     .container{
         grid-gap:0;
-        padding:2em 1.2em;
+        padding:1em 1.2em 0 1.2em;
     }
 
     .content{
