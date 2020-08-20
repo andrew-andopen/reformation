@@ -29,6 +29,8 @@ body, input, button {
 
 button {
  cursor: pointer;
+border:none;
+margin-top:1.6em;
 }
 
 
@@ -53,6 +55,7 @@ textarea{
     border-radius:4px;
     font-size:1em;
 }
+
 
 textarea:focus{
     border:1px solid #35695C;
@@ -87,7 +90,6 @@ header img{
 a.button{
     background-color: #303133;
     display:inline-block;
-    margin-top:1.6em;
     width:12em;
     height:3em;
     display: flex;
@@ -114,6 +116,7 @@ a.button:hover{
 
 @media screen and (max-width: 1164px) {
 
+
     .content{
         grid-column: 1/9;
 
@@ -128,6 +131,7 @@ a.button:hover{
 
 
 @media screen and (max-width: 768px) {
+
 
     header{
         padding:2em 4em;
