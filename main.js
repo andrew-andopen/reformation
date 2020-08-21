@@ -34,6 +34,8 @@ xhr.send(formData);
 //Submit negative form
 const formNeg = document.getElementById("form-neg")
 
+console.log(formNeg)
+
 formNeg.onsubmit = function(event) {
 event.preventDefault();
 var formData = new FormData(formNeg);
@@ -57,4 +59,3 @@ xhr.send(formData);
 };
 
 
-console.log(h1Tag)
