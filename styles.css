@@ -116,15 +116,92 @@ a.button:hover{
     width:80%;
 }
 
+.social{
+    display:none;
+    grid-column: 2/7;
+}
+
+.social p{
+    color: #303133;
+    margin-bottom:1em;
+}
+
+.badges{
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+}
+
+.badge{
+    margin-right:8px;
+}
+
+a.icon{
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    background-color:#35695C;
+    border-radius: 2.5em;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s linear;
+}
+
+a.icon:hover{
+    background-color: #303133 ;
+}
+
+a.icon img{
+    max-width: 40%;
+}
+
+
+footer{
+    margin:0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 16px;
+    max-width: 1440px;
+    padding: 4em 6em;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+    .content{
+        margin-top: 0;
+    }
+
+    .illo{
+        margin-top:3em;
+    }
+
+
+}
+
+
+
+
+
+
 @media screen and (max-width: 1164px) {
 
 
     .content{
         grid-column: 1/9;
 
-        margin-top:0;
+        margin:0 0 4em 0;
 
-        padding-bottom: 12em;
+        
     }
 
     .illo{
@@ -188,60 +265,19 @@ a.button:hover{
         font-size: 1em;
     }
 
+    footer{
+        padding:0 2em 4em 2em;
+        grid-gap:0;
+    }
+
+    .social{
+        grid-column: 1/13;
+    }
+
+    .badges{
+        justify-content: center;
+    }
+
+
 }
 
-.social{
-    display:none;
-    grid-column: 2/7;
-}
-
-.social p{
-    color: #303133;
-    margin-bottom:1em;
-}
-
-.badges{
-    display:flex;
-    align-items:center;
-    justify-content: flex-start;
-}
-
-.badge{
-    margin-right:8px;
-}
-
-a.icon{
-    position: relative;
-    width: 2.5em;
-    height: 2.5em;
-    line-height: 2.5em;
-    vertical-align: middle;
-    background-color:#35695C;
-    border-radius: 2.5em;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: all 0.2s linear;
-}
-
-a.icon:hover{
-    background-color: #303133 ;
-}
-
-a.icon img{
-    max-width: 40%;
-}
-
-
-footer{
-    margin:0 auto;
-
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 16px;
-    max-width: 1440px;
-    padding: 4em 6em;
-}
