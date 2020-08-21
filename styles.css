@@ -127,6 +127,7 @@ a.button:hover{
 
     .illo{
         grid-column: 9/13;
+        margin-top:0;
     }
 
 }
@@ -154,7 +155,7 @@ a.button:hover{
         justify-content:center;
         flex-direction:column;
         flex-flow: column-reverse;
-        padding:0 1.2em 0 1.2em;
+        padding:0 2em 0 2em;
     }
 
     .content{
