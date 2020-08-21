@@ -88,12 +88,15 @@ header img{
     margin-top:5em;
 }
 
-input#checkbox{
+input#checkbox,
+input#email{
     width:0;
     height:0;
     display:none;
     visibility: hidden;
 }
+
+input#email
 
 a.button{
     background-color: #303133;
