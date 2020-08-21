@@ -96,4 +96,4 @@ console.log(email);
 
 const emailTag = document.getElementById("email")
 
-emailTag.innerHTML = email
+emailTag.value = email
