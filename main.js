@@ -67,8 +67,8 @@ else if(formNeg) {
         if (xhr.status === 200) {
             h1Tag.innerHTML = "Thanks for your feedback.";
             h2Tag.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-            
-            
+            textAreaTag.style.display = "none"
+            submitTag.style.display = "none";
         } else {
           formH1Tag.innerHTML = `Sorry, please reload your page and try again`
         }
@@ -78,5 +78,19 @@ else if(formNeg) {
 
 }
 
+
+
+
+
+
+//URL parameters
+
+const queryString = window.location.search;
+console.log(queryString);
+
+const urlParams = new URLSearchParams(queryString);
+
+const email = urlParams.get('email')
+console.log(email);
 
 

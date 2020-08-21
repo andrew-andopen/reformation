@@ -88,6 +88,13 @@ header img{
     margin-top:5em;
 }
 
+input#checkbox{
+    width:0;
+    height:0;
+    display:none;
+    visibility: hidden;
+}
+
 a.button{
     background-color: #303133;
     display:inline-block;
@@ -177,6 +184,10 @@ footer{
 
 @media screen and (max-width: 1440px) {
 
+    .container{
+        padding-top:2em;
+    }
+
     .content{
         margin-top: 0;
     }
@@ -184,8 +195,6 @@ footer{
     .illo{
         margin-top:3em;
     }
-
-
 }
 
 
