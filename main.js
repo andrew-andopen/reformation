@@ -94,3 +94,6 @@ const email = urlParams.get('email')
 console.log(email);
 
 
+const emailTag = document.getElementById("email")
+
+emailTag.innerHTML = email
