@@ -143,26 +143,16 @@ const emailTag = document.querySelectorAll(".email")
 const firstNameTag = document.querySelectorAll(".fname")
 const lastNameTag = document.querySelectorAll(".lname")
 
-// emailTag.value = email
-// firstNameTag.value = fname
-// lastNameTag.value = lname
-
-
-// emailTag.forEach(emailInput => emailInput.value = fname);
-// firstNameTag.forEach(firstNameInput => firstNameInput.value = fname);
-// lastNameTag.forEach(lastNameInput => lastNameInput.value = lname);
-
-
 
 emailTag.forEach((emailInput) => {
     emailInput.value = email
   });
 
 
-  firstNameTag.forEach((  firstNameInput) => {
+  firstNameTag.forEach((firstNameInput) => {
     firstNameInput.value = fname
   });
 
-  lastNameTag.forEach((  lastNameInput) => {
+  lastNameTag.forEach((lastNameInput) => {
     lastNameInput.value = lname
   });
