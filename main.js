@@ -20,7 +20,7 @@ const formNeg = document.getElementById("form-neg")
 
 
 //Submit wasClicked
-// const formWasClicked = document.getElementById("form-wasClicked")
+const formWasClicked = document.getElementById("form-wasClicked")
 
 
 // const redirect = function () {
@@ -149,11 +149,20 @@ const lastNameTag = document.querySelectorAll("lname")
 
 
 // emailTag.forEach(emailInput => emailInput.value = fname);
-firstNameTag.forEach(firstNameInput => firstNameInput.value = fname);
-lastNameTag.forEach(lastNameInput => lastNameInput.value = lname);
+// firstNameTag.forEach(firstNameInput => firstNameInput.value = fname);
+// lastNameTag.forEach(lastNameInput => lastNameInput.value = lname);
 
 
 
 emailTag.forEach((emailInput) => {
-    emailInput.value = fname
+    emailInput.value = email
+  });
+
+
+  firstNameTag.forEach((  firstNameInput) => {
+    firstNameInput.value = fname
+  });
+
+  lastNameTag.forEach((  lastNameInput) => {
+    lastNameInput.value = lname
   });
