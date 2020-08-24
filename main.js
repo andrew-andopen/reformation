@@ -86,13 +86,24 @@ else if(formNeg) {
 //URL parameters
 
 const queryString = window.location.search;
+console.log(queryString);
 
 const urlParams = new URLSearchParams(queryString);
 
 const email = urlParams.get('email')
 console.log(email);
 
+const fname = urlParams.get('firstname')
+console.log(fname);
+
+const lname = urlParams.get('lastname')
+console.log(lname);
+
 
 const emailTag = document.getElementById("email")
+const firstNameTag = document.getElementById("fname")
+const lastNameTag = document.getElementById("lname")
 
 emailTag.value = email
+firstNameTag.value = fname
+lastNameTag.value = lname
