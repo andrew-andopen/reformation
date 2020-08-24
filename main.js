@@ -139,9 +139,9 @@ const lname = urlParams.get('lastname')
 console.log(lname);
 
 
-const emailTag = document.getElementById("email")
-const firstNameTag = document.getElementById("fname")
-const lastNameTag = document.getElementById("lname")
+const emailTag = document.querySelector("email")
+const firstNameTag = document.querySelector("fname")
+const lastNameTag = document.querySelector("lname")
 
 emailTag.value = email
 firstNameTag.value = fname
