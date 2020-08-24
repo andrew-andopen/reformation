@@ -139,10 +139,15 @@ const lname = urlParams.get('lastname')
 console.log(lname);
 
 
-const emailTag = document.querySelector("email")
-const firstNameTag = document.querySelector("fname")
-const lastNameTag = document.querySelector("lname")
+const emailTag = document.querySelectorAll("email")
+const firstNameTag = document.querySelectorAll("fname")
+const lastNameTag = document.querySelectorAll("lname")
 
-emailTag.value = email
-firstNameTag.value = fname
-lastNameTag.value = lname
+// emailTag.value = email
+// firstNameTag.value = fname
+// lastNameTag.value = lname
+
+
+emailTag.forEach(emailInput => emailInput.value = email);
+firstNameTag.forEach(firstNameInput => firstNameInput.value = fname);
+lastNameTag.forEach(lastNameInput => lastNameInput.value = lname);
