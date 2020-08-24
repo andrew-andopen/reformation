@@ -88,10 +88,10 @@ header img{
     margin-top:5em;
 }
 
-input#checkbox,
-input#email,
-input#fname,
-input#lname{
+input.checkbox,
+input.email,
+input.fname,
+input.lname{
     width:0;
     height:0;
     display:none;
@@ -296,3 +296,6 @@ footer{
 
 }
 
+#form-wasClicked{
+    display:none;
+}
