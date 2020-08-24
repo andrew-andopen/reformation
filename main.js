@@ -20,13 +20,13 @@ const formNeg = document.getElementById("form-neg")
 
 
 //Submit wasClicked
-const formWasClicked = document.getElementById("form-wasClicked")
+// const formWasClicked = document.getElementById("form-wasClicked")
 
 
-const redirect = function () {
-    window.location.href = 'https://clients.mindbodyonline.com/classic/mainclass?studioid=435666&tg=&vt=&lvl=&stype=-7&view=day&trn=0&page=&catid=&prodid=&date=8%2f21%2f2020&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1';
+// const redirect = function () {
+//     window.location.href = 'https://clients.mindbodyonline.com/classic/mainclass?studioid=435666&tg=&vt=&lvl=&stype=-7&view=day&trn=0&page=&catid=&prodid=&date=8%2f21%2f2020&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0&loc=1';
 
-}
+// }
 
 
 if(formPos){
@@ -139,24 +139,21 @@ const lname = urlParams.get('lastname')
 console.log(lname);
 
 
-const emailTag = document.querySelectorAll(".email")
-const firstNameTag = document.querySelectorAll(".fname")
-const lastNameTag = document.querySelectorAll(".lname")
+const emailTag = document.querySelectorAll("email")
+const firstNameTag = document.querySelectorAll("fname")
+const lastNameTag = document.querySelectorAll("lname")
 
 // emailTag.value = email
 // firstNameTag.value = fname
 // lastNameTag.value = lname
 
 
-// emailTag.forEach(emailInput, function () {
-//     emailInput.value = fname
-// });
+// emailTag.forEach(emailInput => emailInput.value = fname);
 firstNameTag.forEach(firstNameInput => firstNameInput.value = fname);
 lastNameTag.forEach(lastNameInput => lastNameInput.value = lname);
 
 
-emailTag.forEach(myFunction);
 
-function myFunction(item) {
-    item.value = fname
-}
+emailTag.forEach((emailInput) => {
+    emailInput.value = fname
+  });
