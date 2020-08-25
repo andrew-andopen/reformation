@@ -226,8 +226,14 @@ footer{
         grid-gap:0;
     }
 
+    .illo{
+        grid-column: 8/13;
+        margin-left:24px;
+    }
+
     .content{
         margin-top: 0;
+        grid-column: 2/7;
     }
 
     footer{
