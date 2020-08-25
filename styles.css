@@ -118,8 +118,6 @@ a.button:hover{
 
 .illo{
     grid-column: 7/13;
-    /* width:110%; */
-    /* justify-self: flex-end; */
 
     display: flex;
 }
@@ -139,9 +137,7 @@ a.button:hover{
     width:100%;
 }
 
-/* .illo img.couple{
-    width:130%;
-} */
+
 
 .couple{
     grid-column: 2/3;
@@ -246,7 +242,7 @@ footer{
 
 
     .content{
-        grid-column: 1/9;
+        /* grid-column: 1/9; */
 
         margin:0 0 4em 0;
 
@@ -254,8 +250,12 @@ footer{
     }
 
     .illo{
-        grid-column: 9/13;
+        /* grid-column: 9/13; */
         margin-top:0;
+    }
+
+    .group{
+        margin-top:18em;
     }
 
 }
@@ -293,13 +293,31 @@ footer{
     }
 
     .illo{
-        margin:0 0 1.2em 0;
+        margin:0 0 3.2em 0;
         justify-content:center;
+
+        flex-direction:column;
     }
 
-    .illo img{
-        width:35%;
+    .grid-left{
+        display:none;
     }
+
+    .grid-right{
+        margin-left:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+    .group{
+        margin-top:0;
+        border-radius:100%;
+        max-width:60%;
+    }
+
 
 
     textarea{
