@@ -156,7 +156,7 @@ a.button:hover{
 
 .social{
     display:none;
-    grid-column: 2/7;
+    grid-column: 1/7;
 }
 
 .social p{
