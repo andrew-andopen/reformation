@@ -187,6 +187,11 @@ footer{
 
 
 
+#form-wasClicked{
+    display:none;
+}
+
+
 
 @media screen and (max-width: 1440px) {
 
@@ -294,8 +299,4 @@ footer{
     }
 
 
-}
-
-#form-wasClicked{
-    display:none;
 }

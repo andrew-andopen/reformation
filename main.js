@@ -40,7 +40,7 @@ if(formPos){
         var response = JSON.parse(xhr.response);
         if (xhr.status === 200) {
             h1Tag.innerHTML = "Thanks for your feedback.";
-            h2Tag.innerHTML = "Why not book your next class while you’re here?";
+            h2Tag.innerHTML = "Are you booked in for a class this week?";
             textAreaTag.style.display = "none"
             submitTag.style.display = "none"
             // submitTag.innerHTML = "Book class"
