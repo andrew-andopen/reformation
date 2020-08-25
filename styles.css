@@ -10,9 +10,9 @@
 
 body {
  -webkit-font-smoothing: antialiased;
-color:#ffffff;
+color:#303133;
 min-height:100vh;
-background: linear-gradient(to bottom, #35695C 60%, #F7F7F7 40%);
+background: linear-gradient(to bottom, #F7F7F7 60%, #F9F5F1 40%);
 background-repeat:no-repeat;
 }
 
@@ -70,7 +70,7 @@ header
 }
 
 header img{
-    max-width:10em;
+    max-width:12em;
 }
 
 .container{
@@ -83,7 +83,7 @@ header img{
 }
 
 .content{
-    grid-column: 2/7;
+    grid-column: 1/6;
 
     margin-top:5em;
 }
@@ -101,7 +101,7 @@ input.lname{
 
 
 a.button{
-    background-color: #303133;
+    background-color: #35695C;
     display:inline-block;
     width:12em;
     height:3em;
@@ -112,21 +112,50 @@ a.button{
 }
 
 a.button:hover{
-    background-color:#35695C;
+    background-color:#303133;
     border: 1px solid #F7F7F7;
 }
 
 .illo{
-    grid-column: 7/12;
-    margin-top:8em;
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
+    grid-column: 7/13;
+    /* width:110%; */
+    /* justify-self: flex-end; */
+
+    display: flex;
+}
+
+.grid-left,
+.grid-right{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:1em;
+}
+
+.grid-right{
+    margin-left:1em;
 }
 
 .illo img{
-    width:80%;
-    border-radius:80%;
+    width:100%;
+}
+
+/* .illo img.couple{
+    width:130%;
+} */
+
+.couple{
+    grid-column: 2/3;
+    align-self: flex-end;
+    justify-self:flex-end;
+}
+
+.studio{
+    grid-column: span 2;
+}
+
+.group{
+    grid-column: span 2;
+    margin-top:9em;
 }
 
 .social{
