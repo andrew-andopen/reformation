@@ -238,6 +238,7 @@ footer{
 
     footer{
         padding-top:0;
+        grid-column: 2/7;
     }
 }
 
