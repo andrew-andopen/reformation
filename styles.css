@@ -228,6 +228,10 @@ footer{
     .content{
         margin-top: 0;
     }
+
+    footer{
+        padding-top:0;
+    }
 }
 
 
