@@ -236,8 +236,7 @@ footer{
         grid-column: 2/7;
     }
 
-    footer{
-        padding-top:0;
+    .social{
         grid-column: 2/7;
     }
 }
