@@ -76,7 +76,7 @@ else if(formNeg) {
         var response = JSON.parse(xhr.response);
         if (xhr.status === 200) {
             h1Tag.innerHTML = "Thanks for your feedback.";
-            h2Tag.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            h2Tag.innerHTML = "We’re sorry something went wrong. Thank you for taking the time to let us know so we can improve in the future."
             textAreaTag.style.display = "none"
             submitTag.style.display = "none";
         } else {
